@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "project": {
+    "name": "Demo",
+    "create": true,
+    "settings": {
+      "frame_rate": 25,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "timeline": {
+    "name": "Main",
+    "replace": false
+  },
+  "media": [
+    {
+      "id": "intro",
+      "path": "/absolute/path/intro.mp4"
+    }
+  ],
+  "edits": [
+    {
+      "media": "intro",
+      "source_in": {"seconds": 2},
+      "source_out": {"seconds": 8},
+      "track": 1,
+      "record_at": {"seconds": 0},
+      "media_type": "all",
+      "properties": {"ZoomX": 1.1, "ZoomY": 1.1}
+    }
+  ],
+  "captions": {"auto": false},
+  "render": {
+    "preset": "YouTube 1080p",
+    "target_dir": "/absolute/output",
+    "name": "demo",
+    "wait": true
+  }
+}

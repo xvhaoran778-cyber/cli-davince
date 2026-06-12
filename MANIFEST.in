@@ -1,0 +1,2 @@
+recursive-include src/cli_anything/resolve/skills *.md
+

@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.env
+.env.*
+!.env.example
+
+# Local edit plans may contain private media paths and project names.
+edit-plan.json
+*.local.json
+private/
+
+# Keep source media and rendered output outside version control.
+media/
+renders/
+output/
+test-output/
+*.drp
+*.dra
+*.drt
